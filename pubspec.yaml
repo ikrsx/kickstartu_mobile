@@ -1,6 +1,6 @@
 name: kickstartu_mobile
-description: "A new Flutter project."
-publish_to: 'none'
+description: "Simplify your college journey with KickStartU."
+publish_to: "none"
 version: 0.1.0
 
 environment:
