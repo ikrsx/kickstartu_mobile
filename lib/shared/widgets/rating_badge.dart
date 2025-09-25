@@ -16,6 +16,7 @@ class RatingBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
+
       children: [
         Icon(Icons.star, size: starIconSize ?? 12, color: Colors.amber),
         Text(ratingText, style: TextStyle(fontSize: ratingTextSize)),

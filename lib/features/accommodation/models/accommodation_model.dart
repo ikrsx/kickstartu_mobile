@@ -1,4 +1,4 @@
-class AccomodationModel {
+class AccommodationModel {
   final List<String> imageNameList;
   final String accomodationName;
   final String description;
@@ -7,7 +7,7 @@ class AccomodationModel {
   final String ownerName;
   final String ownerContactNumber;
 
-  const AccomodationModel({
+  const AccommodationModel({
     required this.imageNameList,
     required this.accomodationName,
     required this.description,

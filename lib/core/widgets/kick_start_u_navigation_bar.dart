@@ -19,7 +19,7 @@ class KickStartUNavigationBar extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.house_rounded),
-          label: "Accomodations",
+          label: "Accommodations",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.local_grocery_store_rounded),
