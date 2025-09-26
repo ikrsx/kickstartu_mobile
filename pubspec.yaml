@@ -21,3 +21,8 @@ flutter:
 
   assets:
     - assets/images/
+
+  fonts:
+    - family: Noto Sans
+      fonts:
+        - asset: assets/fonts/NotoSans.ttf

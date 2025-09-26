@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kickstartu_mobile/features/accommodation/views/widgets/accommodation_list_builder.dart';
 import 'package:kickstartu_mobile/core/widgets/account_button.dart';
-import 'package:kickstartu_mobile/core/widgets/floating_search_button.dart';
+import 'package:kickstartu_mobile/core/search/views/widgets/floating_search_button.dart';
 import 'package:kickstartu_mobile/core/widgets/kick_start_u_navigation_bar.dart';
 
 class KickStartUScreen extends StatefulWidget {
@@ -19,18 +19,19 @@ class _KickStartUScreenState extends State<KickStartUScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _screenAppBar(),
-
       floatingActionButton: FloatingSearchButton(),
-
-      bottomNavigationBar: KickStartUNavigationBar(
-        currentIndex: currentScreenIndex,
-
-        onTap: (index) => setState(() {
-          currentScreenIndex = index;
-        }),
-      ),
-
+      bottomNavigationBar: _screenNavigationBar(),
       body: AccommodationListBuilder(),
+    );
+  }
+
+  KickStartUNavigationBar _screenNavigationBar() {
+    return KickStartUNavigationBar(
+      currentIndex: currentScreenIndex,
+
+      onTap: (index) => setState(() {
+        currentScreenIndex = index;
+      }),
     );
   }
 

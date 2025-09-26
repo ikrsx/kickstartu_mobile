@@ -16,6 +16,9 @@ class KickStartUNavigationBar extends StatelessWidget {
       onTap: onTap,
       currentIndex: currentIndex,
       iconSize: 26,
+      elevation: 0,
+      unselectedFontSize: 14.0,
+
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.house_rounded),
